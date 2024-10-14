@@ -25,3 +25,27 @@ for(let fruit of fruits) {
 
 // using forEach 
 fruits.forEach((curFruit:string) => console.log(curFruit));
+
+
+
+const numbers1: number[] = [1, 2, 3, 4, 5];
+
+// map method 
+// Doubling each number 
+const double: number[] = numbers1.map((item: number) => item);
+console.log(double);
+
+// converting numbers to strings 
+const numToString: string[] = numbers1.map((item: number) => item.toString());
+console.log(numToString);
+
+
+// filter Method 
+// Filtering even numbers 
+const evenNum: number[] = numbers1.filter((item:number) => item % 2 === 0);
+console.log(evenNum);
+
+
+// Filtering numbers greater than 3 
+const greterThanThree: number[] = numbers1.filter((item: number) => item > 3);
+console.log(greterThanThree);
