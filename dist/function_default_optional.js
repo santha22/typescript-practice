@@ -1,3 +1,4 @@
+"use strict";
 // const greeting = (name: string, id: number) => {
 //     console.log(`Welcome ${name} your id is ${id}`);
 // }
@@ -8,19 +9,19 @@
 // }
 // greeting("santha");
 // optional parameter
-var greeting = function (name, id) {
-    console.log("Welcome ".concat(name));
+const greeting = (name, id) => {
+    console.log(`Welcome ${name}`);
 };
 greeting("santha");
-var greet3 = function (name, id) {
+const greet3 = (name, id) => {
     if (id) {
-        return "Welcome ".concat(name, " and id is ").concat(id);
+        return `Welcome ${name} and id is ${id}`;
     }
     else {
-        return "Welcome ".concat(name);
+        return `Welcome ${name}`;
     }
 };
-var emp = greet3("santha");
-var emp2 = greet3("santha", 5);
+const emp = greet3("santha");
+const emp2 = greet3("santha", 5);
 console.log(emp);
 console.log(emp2);

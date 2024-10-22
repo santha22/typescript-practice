@@ -1,11 +1,11 @@
-type Person = {
+type Person2 = {
     name: string;
     age: number;
     isStudent: boolean;
     address: { city: string; country: string; }
 }
 
-const person: Person = {
+const person: Person2 = {
     name: "Santha",
     age: 22,
     isStudent: false,

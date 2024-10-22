@@ -1,4 +1,5 @@
-var person = {
+"use strict";
+const person = {
     name: "Santha",
     age: 22,
     isStudent: false,
@@ -13,12 +14,12 @@ console.log(person.address.city);
 // updation 
 person.address.city = "Palasa";
 console.log(person);
-var product = {
+const product = {
     name: "laptop",
     price: 1000,
     quantity: 5,
 };
-var totalPrice = function (product) {
-    return "".concat(product.name, " total cost is ").concat(product.price * product.quantity);
+const totalPrice = (product) => {
+    return `${product.name} total cost is ${product.price * product.quantity}`;
 };
 console.log(totalPrice(product));
